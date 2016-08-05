@@ -1,0 +1,34 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lesson 1 Homework 3</title>
+    <script>
+
+        function bigToSmall(arr) {
+            var str,
+                    arr2 = [];
+
+            for (var i = 0, n = arr.length; i < n; i++) {
+                for (var j = 0; j < arr[i].length; j++) {
+                    arr2.push(arr[i][j]);
+                }
+            }
+
+            arr2.sort();
+            arr2.reverse();
+            str = arr2.join('>');
+
+            return str;
+        }
+
+        var array = [[1,3,2], [5,4,6]];
+        var result = bigToSmall(array);
+        alert(result);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
