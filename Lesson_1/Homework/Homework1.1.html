@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lesson1 Homework1</title>
+    <script>
+
+        function find(arr, value) {
+            for(var i = 0; i < arr.length; i++) {
+                if (arr[i] == value) {
+                    return i;
+                }
+            }
+
+            return -1;
+        }
+
+        var array = ['cat', 12, 0, -1];
+        alert(find(array, 0)); // 2
+        alert(find(array, 3)); //-1
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
